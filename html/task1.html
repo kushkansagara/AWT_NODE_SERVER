@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Form</title>
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+</style>
+<body>
+    <center><h2>Fill this form</h2></center>
+    <form action="/display" method="post">
+        <input type="text" name="fname" placeholder="Enter first Name"><br><br>
+        <input type="text" name="lname" placeholder="Enter last Name"><br><br>
+        <input type="text" name="id" placeholder="Enter student id"><br><br>
+        <input type="number" name="age" placeholder="Enter student age"><br><br>
+        <input type="text" name="dep" placeholder="Enter department name"><br><br>
+        <input type="text" name="branch" placeholder="Enter branch"><br><br>
+        <button type="submit" name="submit"> Display</button>
+    </form>
+</body>
+</html>
